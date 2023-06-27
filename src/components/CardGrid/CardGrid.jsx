@@ -10,10 +10,10 @@ const CardGrid = ({ title, searchValue, contentType }) => {
         item.title.toLowerCase().includes(searchValue.toLowerCase() || "") &&
         item.category === "Movie"
       );
-    } else if (contentType === "tvSeries") {
+    } else if (contentType === "TV Series") {
       return (
         item.title.toLowerCase().includes(searchValue.toLowerCase() || "") &&
-        item.category === "tvSeries"
+        item.category === "TV Series"
       );
     } else {
       return item.title.toLowerCase().includes(searchValue.toLowerCase() || "");
