@@ -1,0 +1,18 @@
+.search-input {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input input {
+  margin-left: 20px;
+  width: 100%;
+  background-color: var(--darkBlue);
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.search-input input:focus {
+  outline: none;
+}
