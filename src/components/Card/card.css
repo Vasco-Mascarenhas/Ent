@@ -58,6 +58,6 @@
   opacity: 1;
 }
 
-.recommended-card:hover img {
+.recommended-card:hover .recommended-image img {
   transform: scale(1.1);
 }

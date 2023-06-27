@@ -15,6 +15,8 @@ const CardGrid = ({ title, searchValue, contentType }) => {
         item.title.toLowerCase().includes(searchValue.toLowerCase() || "") &&
         item.category === "TV Series"
       );
+    } else if (contentType === "isBookmarked") {
+      return item.isBookmarked;
     } else {
       return item.title.toLowerCase().includes(searchValue.toLowerCase() || "");
     }
