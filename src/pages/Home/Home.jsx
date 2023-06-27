@@ -17,8 +17,13 @@ const Home = () => {
       <NavBar />
       <div className="content">
         <SearchBar value={searchValue} onChange={handleSearchChange} />
-        <h1>Trending</h1>
-        <Slider />
+        {!searchValue ? (
+          <div>
+            <h1>Trending</h1>
+            <Slider />
+          </div>
+        ) : null}
+
         <CardGrid title={"Recommended Movies"} searchValue={searchValue} />
       </div>
     </div>
