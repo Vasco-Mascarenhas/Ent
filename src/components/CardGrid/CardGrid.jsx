@@ -3,10 +3,22 @@ import "./cardgrid.css";
 import data from "../../../data.json";
 import Card from "../Card/Card";
 
-const CardGrid = ({ title, searchValue }) => {
-  const filteredData = data.filter((item) =>
-    item.title.toLowerCase().includes(searchValue.toLowerCase() || "")
-  );
+const CardGrid = ({ title, searchValue, contentType }) => {
+  const filteredData = data.filter((item) => {
+    if (contentType === "Movie") {
+      return (
+        item.title.toLowerCase().includes(searchValue.toLowerCase() || "") &&
+        item.category === "Movie"
+      );
+    } else if (contentType === "tvSeries") {
+      return (
+        item.title.toLowerCase().includes(searchValue.toLowerCase() || "") &&
+        item.category === "tvSeries"
+      );
+    } else {
+      return item.title.toLowerCase().includes(searchValue.toLowerCase() || "");
+    }
+  });
 
   return (
     <div className="card-content">
