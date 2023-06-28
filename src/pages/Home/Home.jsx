@@ -19,7 +19,7 @@ const Home = () => {
         <SearchBar
           value={searchValue}
           onChange={handleSearchChange}
-          placeholder={"Search for Movies and TV Series"}
+          placeholder={"Search for Movies or TV Series"}
         />
         {!searchValue ? (
           <div>
