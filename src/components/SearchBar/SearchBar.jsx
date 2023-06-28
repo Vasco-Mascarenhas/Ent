@@ -1,7 +1,7 @@
 import React from "react";
 import "./searchbar.css";
 import search from "./imgs/icon-search.svg";
-const SearchBar = ({ value, onChange }) => {
+const SearchBar = ({ value, onChange, placeholder }) => {
   const handleInputChange = (event) => {
     onChange(event.target.value);
   };
@@ -12,7 +12,7 @@ const SearchBar = ({ value, onChange }) => {
         type="text"
         name="search-input"
         id="search-input"
-        placeholder="Search for movies or TV series"
+        placeholder={placeholder}
         value={value}
         onChange={handleInputChange}
       />

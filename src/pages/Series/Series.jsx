@@ -13,7 +13,11 @@ const Series = () => {
     <div className="wrapper">
       <NavBar />
       <div className="content">
-        <SearchBar value={searchValue} onChange={handleSearchChange} />
+        <SearchBar
+          value={searchValue}
+          onChange={handleSearchChange}
+          placeholder={"Search for TV Series"}
+        />
 
         <CardGrid
           contentType="TV Series"

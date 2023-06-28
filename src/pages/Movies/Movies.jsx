@@ -13,7 +13,11 @@ const Movies = () => {
     <div className="wrapper">
       <NavBar />
       <div className="content">
-        <SearchBar value={searchValue} onChange={handleSearchChange} />
+        <SearchBar
+          value={searchValue}
+          onChange={handleSearchChange}
+          placeholder={"Search for movies"}
+        />
 
         <CardGrid
           contentType="Movie"

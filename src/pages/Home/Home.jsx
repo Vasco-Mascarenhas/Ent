@@ -16,7 +16,11 @@ const Home = () => {
     <div className="wrapper">
       <NavBar />
       <div className="content">
-        <SearchBar value={searchValue} onChange={handleSearchChange} />
+        <SearchBar
+          value={searchValue}
+          onChange={handleSearchChange}
+          placeholder={"Search for Movies and TV Series"}
+        />
         {!searchValue ? (
           <div>
             <h1>Trending</h1>
