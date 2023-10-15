@@ -3,7 +3,7 @@
 
 A [frontend Mentor](https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X) "Advanced" challenge.
 
-![Entertainment](https://raw.githubusercontent.com/Vasco-Mascarenhas/md-images/main/image.png?token=GHSAT0AAAAAACGIGP6J32DNP33M6C4JMAS2ZJL57HQ)
+![Entertainment](https://raw.githubusercontent.com/Vasco-Mascarenhas/Ent/main/image.png)
 ## Brief
 
 Your challenge is to build out this entertainment web application and get it looking as close to the design as possible.
